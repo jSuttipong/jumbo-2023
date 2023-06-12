@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import "../assets/css/Carousel.css";
+import "../assets/scss/Carousel.scss";
 
-const Carousel = ({ objects }) => {
+const Carousel = ({ objects, objSize }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % objects.length);
   };
@@ -14,11 +13,11 @@ const Carousel = ({ objects }) => {
     );
   };
 
-  const visibleObjects = objects.slice(currentIndex, currentIndex + 5);
+  const visibleObjects = objects.slice(currentIndex, currentIndex + objSize);
   let nextActive = true;
   let prevActive = false;
 
-  if (objects.length - currentIndex == 5) {
+  if (objects.length - currentIndex === objSize) {
     nextActive = false;
   } else {
     nextActive = true;
@@ -30,12 +29,19 @@ const Carousel = ({ objects }) => {
   }
 
   return (
-    <div className="carousel ctn-carousel">
-      {visibleObjects.map((object, index) => (
-        <div key={index} className="slide crs-obj">
-          {object}
+    <div className="carousel">
+      <div className="container">
+        <div className="row">
+          {visibleObjects.map((object, index) => (
+            <div
+              key={index}
+              className="slide crs-obj col-6 col-sm-4 col-lg-3 col-xl"
+            >
+              {object.name ? object.name : ""}
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
       <button
         disabled={!prevActive}
         className="btn btn-prev"
