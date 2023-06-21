@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Cubhouse Website",
+        "stack": [
+            "Nuxt",
+            "Boostrap",
+            "Fullpage"
+        ],
+        "images": [
+            "cubhouse/1.png",
+            "cubhouse/2.png",
+            "cubhouse/3.png",
+            "cubhouse/4.png",
+            "cubhouse/5.png",
+            "cubhouse/6.png"
+        ],
+        "des": "Website"
+    },
+    {
+        "name": "KTB Event",
+        "stack": [
+            "Nuxt",
+            "Boostrap"
+        ],
+        "images": [
+            "ktb/1.png",
+            "ktb/2.png",
+            "ktb/3.png",
+            "ktb/4.png"
+        ],
+        "des": "Website"
+    },
+    {
+        "name": "SDGS Microsite",
+        "stack": [
+            "Nuxt",
+            "Boostrap",
+            "API",
+            "Node",
+            "SQL"
+        ],
+        "images": [
+            "sdgs/1.png",
+            "sdgs/2.png",
+            "sdgs/3.png",
+            "sdgs/4.png",
+            "sdgs/6.png"
+        ],
+        "des": "Website"
+    }
+    ,
+    {
+        "name": "APT Dashboard",
+        "stack": [
+            "Vue",
+            "Boostrap",
+            "Apexchart",
+            "Google API"
+        ],
+        "images": [
+            "apt/1.png",
+            "apt/2.png",
+            "apt/3.png",
+            "apt/4.png",
+            "apt/5.png",
+            "apt/6.png"
+        ],
+        "des": "Website"
+    }
+    ,
+    {
+        "name": "IBank Appointment Module",
+        "stack": [
+            "Vue",
+            "Boostrap"
+        ],
+        "images": [
+            "ibank/1.png",
+            "ibank/2.png",
+            "ibank/3.png"
+        ],
+        "des": "Website"
+    }
+    ,
+    {
+        "name": "M Supplier Portal",
+        "stack": [
+            "Nuxt",
+            "Boostrap"
+        ],
+        "images": [
+            "mportal/1.png",
+            "mportal/2.png",
+            "mportal/3.png"
+        ],
+        "des": "Website"
+    }
+]
